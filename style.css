@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap');
+
+:root {
+    --cor-fundo: #F8F0F6; /* Um tom claro e suave de rosa para o fundo */
+    --cor-principal: #FBE8EB; /* Um rosa mais suave para a caixa principal */
+    --cor-secundaria: #F4A6B0; /* Um rosa médio para os botões */
+    --cor-destaque: #D88C8C; /* Um rosa mais forte para o destaque */
+    --cor-texto: #6D2C77; /* Um roxo escuro para o texto */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Great Vibes', cursive; /* Fonte mais elegante para o tema de princesa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px; /* Adiciona bordas arredondadas para um toque mais suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra para um efeito de elevação */
+}
+
+h1, .caixa-perguntas, .caixa-resultado{
+    font-family: 'Chakra Petch', sans-serif; /* Mantém a fonte original para títulos e perguntas */
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Chakra Petch', sans-serif; /* Mantém a fonte dos botões para um estilo mais elegante */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+.caixa-resultado{
+    display: none;
+}
+
+.caixa-resultado.mostrar{
+    display: block;
+}
+
+.caixa-alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
